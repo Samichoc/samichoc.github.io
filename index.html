@@ -18,15 +18,26 @@
         </div>
         <div>
             <h1>Guessing game.</h1>
-        <button type="button" onclick="">hallo</button>
+            <button type="button" onclick="PlusScore()">Click me</button><br>
+            <button type="button" onclick="wins()">show the points</button>
         </div>
         <script>
+            //setup
+            score = 0
             //begin
             YourName = prompt("what is your name")
             alert("hallo " + YourName + ".")
             //change the name
             function NewName() {
                 YourName = prompt("What is your new name?")
+            }
+            //add score
+            function PlusScore() {
+                score = score+1
+            }
+            //show wins
+            function wins() {
+                alert(YourName + " has " + score + ".")
             }
         </script>
     </body>
