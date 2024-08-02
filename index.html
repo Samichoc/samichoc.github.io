@@ -21,9 +21,14 @@
             <button type="button" onclick="PlusScore()">Click me</button><br>
             <button type="button" onclick="wins()">show the points</button>
         </div>
+        <div>
+            <h1>Quesin game.</h1>
+            <button type="button" onclick="ShowWinsOne()">Wins</button>
+        </div>
         <script>
             //setup
             score = 0
+            win = 0
             //begin
             YourName = prompt("what is your name")
             alert("hallo " + YourName + ".")
@@ -38,6 +43,9 @@
             //show wins
             function wins() {
                 alert(YourName + " has " + score + " points.")
+            }
+            function ShowWinsOne() {
+                alert(YourName + " has " + win + " wins.")
             }
         </script>
     </body>
