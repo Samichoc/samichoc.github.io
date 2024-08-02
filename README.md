@@ -1,3 +1,4 @@
-#Samichoc.haralampi.com
-Is a website.
-Made BY : Samichoc.
+Made by samichoc
+```
+samichoc.haralampi.com
+```
