@@ -22,8 +22,9 @@
             <button type="button" onclick="wins()">show the points</button>
         </div>
         <div>
-            <h1>Quesin game.</h1>
-            <button type="button" onclick="ShowWinsOne()">Wins</button>
+            <h1>guesing game.</h1>
+            <button type="button" onclick="ShowWinsOne()">Wins</button><br>
+            <button type="button" onclick="First()">First</button>
         </div>
         <script>
             //setup
@@ -46,6 +47,18 @@
             }
             function ShowWinsOne() {
                 alert(YourName + " has " + win + " wins.")
+            }
+            function First() {
+                answer = prompt("What is my nickname.")
+                if (answer == "Samichoc") {
+                    alert("Correct.")
+                    wins = wins+1
+                    console.log("Correct.")
+                } else {
+                    alert("Wrong.")
+                    wins = wins-1
+                    console.log("Incorrect.")
+                }
             }
         </script>
     </body>
